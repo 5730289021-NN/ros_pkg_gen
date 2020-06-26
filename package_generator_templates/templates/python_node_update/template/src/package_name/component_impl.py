@@ -187,6 +187,15 @@ class {apply-capitalized_comp_name}Implementation(object):
         pass
         # protected region user update end #
 
+    def terminate(self):
+        """
+        A function performed when Keyboard Interrupt trigger
+	    This gives you a chance to save important data or clean clean object if needed
+        """
+        # protected region user terminate begin #
+        pass
+        # protected region user terminate end #
+
     {forallserviceServer}
     def callback_{name}(self, req):
         """

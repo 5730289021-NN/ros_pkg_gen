@@ -225,3 +225,4 @@ def main():
 
     rospy.Timer(rospy.Duration(1.0 / {componentFrequency}), node.update)
     rospy.spin()
+    node.component_implementation_.terminate()
